@@ -1,0 +1,154 @@
+.contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3vw;
+    padding-top: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    margin-bottom: 30px;
+    flex: 1;
+    margin-left: 3vw;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.contact-info a:hover {
+    color: #fff;
+}
+
+.contact-form {
+    flex: 1;
+    text-align: left;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #161616;
+    margin-right: 3vw;
+}
+
+.contact-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-form textarea {
+    width: 100%;
+    max-width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (max-width: 950px) {
+    .contact-wrapper {
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center; /* Center elements horizontally */
+    }
+  
+    .contact-info {
+      margin-right: 0; /* Remove the right margin for contact info */
+      margin-left: 0.8rem;
+      text-align: center;
+    }
+  
+    .contact-form {
+      margin-left: 0; /* Remove the left margin for the form */
+      width: 80vw;
+    }
+  }
+
+  .CTA-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .CTA-container li {
+    justify-content: center;
+    background: #ED4545;
+    padding: 1rem;
+    border-radius: 30px;
+    min-width: 300px;
+    text-align: center;
+  }
+
+  .cta-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ED4545;
+    padding: 1rem;
+    border-radius: 30px;
+    min-width: 400px;
+    margin-bottom: 10px; /* Add spacing between buttons */
+    cursor: pointer;
+    transition: background-color 0.2s; /* Add transition for background color change */
+  }
+  
+  .cta-button a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center; /* Center text horizontally */
+  }
+  
+  .cta-button:hover {
+    background-color: #007bff; /* Change background color to blue on hover */
+  }
+
