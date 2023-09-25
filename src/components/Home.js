@@ -24,7 +24,7 @@ function Home() {
             <a className="btn" href="tel:2144995730">
               Call Us <i class="fa-solid fa-phone"></i>
             </a>
-            <p>Your Trusted Partner in blah</p>
+            <p>Proudly Serving San Luis Obispo and Neighboring Areas</p>
             <div className="buttons-container">
               <button className="btn" onClick={scrollToAbout}>
                 Learn More
