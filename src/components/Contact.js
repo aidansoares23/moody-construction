@@ -64,7 +64,7 @@ function Contact() {
             </a>
           </li>
           <li>
-            <strong>Phone:</strong> <a href="tel:2144995730">(945) 267-6237</a>
+            <strong>Phone:</strong> <a href="tel:2144995730">(214) 499-5730</a>
           </li>
         </ul>
       </div>
