@@ -57,6 +57,7 @@ function Contact() {
           <li>JD Moody Construction</li>
           <li>P.O. Box 13745</li>
           <li>San Luis Obispo, CA, 93406</li>
+          <li>LIC # 1060355</li>
           <li>
             <strong>Email:</strong>{" "}
             <a href="mailto:josh@jdmoodyconstruction.com">
