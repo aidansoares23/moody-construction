@@ -2,6 +2,8 @@ import React from "react";
 import "./Home.css";
 import Contact from "./Contact.js";
 import Services from "./Services.js";
+import Gallery from "./Gallery";
+import Logo from "./images/LogoFinal.png"
 
 function Home() {
   // Function to scroll to the about section
@@ -20,6 +22,7 @@ function Home() {
       <div className="header-container">
         <div className="header-wrapper">
           <div className="header-text">
+          <img src={Logo} className="header-logo" alt="Logo" />
             <h1>Welcome to JD Moody Construction</h1>
             <a className="btn" href="tel:2144995730">
               Call Us <i class="fa-solid fa-phone"></i>
@@ -33,7 +36,9 @@ function Home() {
                 Contact Us
               </button>
             </div>
+            
           </div>
+          
         </div>
       </div>
 
@@ -129,6 +134,8 @@ function Home() {
           </div>
           <br />
         </div>
+
+        <Gallery />
 
         <div className="contact-container" id="contact">
           <div className="contact-header">
