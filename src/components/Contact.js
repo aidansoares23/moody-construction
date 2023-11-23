@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
+import Logo from "./images/LogoFinal.png";
 
 function Contact() {
   const form = useRef();
@@ -53,6 +54,7 @@ function Contact() {
           </li>
         </ul>
         <br />
+        <div className="logo-and-contact">
         <ul>
           <li>JD Moody Construction</li>
           <li>P.O. Box 13745</li>
@@ -68,6 +70,8 @@ function Contact() {
             <strong>Phone:</strong> <a href="tel:2144995730">(214) 499-5730</a>
           </li>
         </ul>
+        <img src={Logo} className="footer-logo"/>
+        </div>
       </div>
       <div className="contact-form">
         <h2>Send Us a Message</h2>
