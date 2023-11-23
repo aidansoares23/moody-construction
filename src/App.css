@@ -2,11 +2,11 @@
   text-align: center;
   background: #0e4c92;
   min-height: 100vh;
-  color: #ffff4c;
+  color: #fff;
   font-family: "Montserrat", sans-serif;
   font-family: "Open Sans", sans-serif;
   font-family: "Oswald", sans-serif;
-  font-size: calc(15px + 0.390625vw);
+  font-size: 1.2rem;
 }
 
 * {
