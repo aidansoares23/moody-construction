@@ -152,13 +152,24 @@ button:hover {
     background-color: #007bff; /* Change background color to blue on hover */
   }
 
-  .footer-logo {
-    max-height: 30vh;
-    margin-left: 10vw;
-  }
-
   .logo-and-contact {
     display: flex;
   
+  }
+
+  .logo-and-contact li a {
+    color: yellow;
+  }
+
+  .CTA-and-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #CTA-1 {
+    padding-top: 200px;
+    padding-left: 30px;
   }
 

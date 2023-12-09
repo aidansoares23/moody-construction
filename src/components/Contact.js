@@ -30,13 +30,32 @@ function Contact() {
   return (
     <div className="contact-wrapper">
       <div className="contact-info">
-        <h4>
+
+             
+      <div className="logo-and-contact">
+        <ul>
+          <li>JD Moody Construction</li>
+          <li>P.O. Box 13745</li>
+          <li>San Luis Obispo, CA, 93406</li>
+          <li>LIC # 1060355</li>
+          <li>
+            <strong>Email:</strong>{" "}
+            <a href="mailto:josh@jdmoodyconstruction.com">
+              Josh@jdmoodyconstruction.com
+            </a>
+          </li>
+          <li>
+            <strong>Phone:</strong> <a href="tel:2144995730">(214) 499-5730</a>
+          </li>
+        </ul>
+        <div className="CTA-and-buttons">
+        <h4 id="CTA-1">
           Are you ready for a high quality and professional experience? Give us
           a call, send an email, or use the provided form, we look forward to
           sharing our expertise!
         </h4>
-        <br />
-        <ul className="CTA-container">
+        <br/>
+        <ul className="CTA-container" id="CTA-1">
           <li>
             <a href="tel:2144995730">
               {" "}
@@ -53,25 +72,13 @@ function Contact() {
             </a>
           </li>
         </ul>
-        <br />
-        <div className="logo-and-contact">
-        <ul>
-          <li>JD Moody Construction</li>
-          <li>P.O. Box 13745</li>
-          <li>San Luis Obispo, CA, 93406</li>
-          <li>LIC # 1060355</li>
-          <li>
-            <strong>Email:</strong>{" "}
-            <a href="mailto:josh@jdmoodyconstruction.com">
-              Josh@jdmoodyconstruction.com
-            </a>
-          </li>
-          <li>
-            <strong>Phone:</strong> <a href="tel:2144995730">(214) 499-5730</a>
-          </li>
-        </ul>
-        <img src={Logo} className="footer-logo"/>
         </div>
+        </div>
+        <br />
+
+        <img src={Logo} className="footer-logo"/>
+
+
       </div>
       <div className="contact-form">
         <h2>Send Us a Message</h2>

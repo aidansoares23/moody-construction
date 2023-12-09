@@ -1,3 +1,28 @@
 .footer-container {
     padding: 1.5rem;
+    height: 20vh;
+    border-top: 1px solid black;
+    background-color: #bfe9ff;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 15vw;
+}
+
+.footer-logo {
+    max-height: 100px;
+}
+
+.footer-logo img {
+    max-height: 150px;
+}
+
+.footer-contact-info {
+
+}
+
+.footer-contact-info-2 {
+
 }
