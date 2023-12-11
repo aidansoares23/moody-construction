@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
-import Logo from "./images/LogoFinal.png";
+import Logo from "../../images/LogoFinal.png";
 
 function Contact() {
   const form = useRef();
@@ -76,7 +76,7 @@ function Contact() {
         </div>
         <br />
 
-        <img src={Logo} className="footer-logo"/>
+        <img src={Logo} className="footer-logo" alt="ok"/>
 
 
       </div>

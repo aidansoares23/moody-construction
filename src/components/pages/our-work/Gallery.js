@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import one from "./images/IMG_2748.jpg";
-import two from "./images/IMG_2749.jpg";
-import three from "./images/IMG_2750.jpg";
-import four from "./images/IMG_2751.jpg";
-import five from "./images/IMG_2752.jpg";
-import six from "./images/IMG_2753.jpg";
-import seven from "./images/IMG_2754.jpg";
-import eight from "./images/IMG_2755.jpg";
-import nine from "./images/IMG_3436.jpg";
+import one from "../../images/IMG_2748.jpg";
+import two from "../../images/IMG_2749.jpg";
+import three from "../../images/IMG_2750.jpg";
+import four from "../../images/IMG_2751.jpg";
+import five from "../../images/IMG_2752.jpg";
+import six from "../../images/IMG_2753.jpg";
+import seven from "../../images/IMG_2754.jpg";
+import eight from "../../images/IMG_2755.jpg";
+import nine from "../../images/IMG_3436.jpg";
 import "./Gallery.css";
 
 function Gallery() {

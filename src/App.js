@@ -13,6 +13,7 @@ function App() {
           <Route path="/contact" Component={Home} />
         </Routes>
       </Router>
+      <Footer />
     </div>
   );
 }

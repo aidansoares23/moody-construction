@@ -1,144 +1,123 @@
 import React from "react";
 import "./Home.css";
-import Contact from "../../Contact.js";
-import Services from "../../Services.js";
-import Gallery from "../../Gallery.js";
-import Footer from "../../Footer.js";
 import { Link } from "react-router-dom";
+import Logo from "../../images/LogoFinal.png";
+import Container from "react-bootstrap/Container";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import Carousel from "react-bootstrap/Carousel";
+import Button from "react-bootstrap/Button";
+import backgroundPhoto from "../../images/IMG_1003.jpg";
+import OurNavbar from "../navbar/Navbar.js";
 
 function Home() {
   return (
-    <>
-      <div className="home-container">
-        <div className="header-container">
-          {/* <Navbar /> */}
-          <div className="header-wrapper">
-            <div className="header-text">
-              <h1>Welcome to JD Moody Construction</h1>
-              {/* <a className="btn" href="tel:2144995730">
-                Call Us <i class="fa-solid fa-phone"></i>
-              </a> */}
-              <p>Proudly Serving San Luis Obispo and Neighboring Areas</p>
-              <div className="buttons-container">
-                <Link to="/our-work" className="btn">
-                  See our work
-                </Link>
-                <Link to="/contact" className="btn">
-                   Contact us
-                </Link>
-              </div>
-            </div>
+    <div className="home-container">
+      {/*Header*/}
+      <Container fluid className="header-wrapper-container">
+  <OurNavbar />
+  <div className="header-mask-container">
+    <Row className="header-wrapper">
+      <Col
+        xs={12}
+        md={8}
+        className="header-text d-flex flex-column align-items-center justify-content-center pt-md-5"
+      >
+        <div className="text-content">
+          <h1 className="display-4 custom-big-text-h1">
+            JD MOODY CONSTRUCTION
+          </h1>
+          <h3 className="font-weight-bold custom-big-text-h3">
+            Proudly Serving San Luis Obispo and Neighboring Areas
+          </h3>
+          <div className="buttons-container">
+            <Link to="/our-work" className="btn">
+              See our work
+            </Link>
+            <Link to="/contact" className="btn">
+              Contact us
+            </Link>
           </div>
         </div>
-
-        <div className="body-wrapper">
-          <div className="services-container">
-            <div className="services-header">
-              <h1>Featured Services</h1>
-              <p>
-                We're ready to tackle any project coming our way. From bathroom
-                remodeling to large scale property maintenance, there's nothing
-                stopping JD Moody Construction from making your dreams, a
-                reality
-              </p>
-
-              <Services />
-
-              <h4 className="no-job">
-                {" "}
-                No job is too big or too small. <br />
-                Please contact us regarding your specific needs!
-              </h4>
-            </div>
-          </div>
-          <br />
-          <div className="about-container" id="about">
-            <br />
-            <div className="Who Are We?">
-              <h2>Meet JD Moody Construction</h2>
-              <p>
-                JD Moody Construction is a construction and contracting firm
-                based in San Luis Obispo, California. Founded with a passion for
-                construction and a commitment to delivering top-notch services,
-                we've been serving the community for over two decades. Our team
-                brings together a diverse set of skills, enabling us to handle
-                projects of all sizes and complexities. As a versatile
-                construction company, we specialize in property maintenance,
-                remodeling, and both commercial and residential new construction
-                projects. We're proud of our ability to transform visions into
-                reality, whether it involves revitalizing existing spaces or
-                crafting innovative designs for new builds. Our dedication to
-                quality, professionalism, and customer satisfaction drives
-                everything we do. We take on projects with a focus on delivering
-                excellence, attention to detail, and a deep commitment to
-                meeting and exceeding our clients' expectations. JD Moody
-                Construction is your trusted partner for construction needs in
-                San Luis Obispo County and the surrounding areas. When you
-                choose us, you're choosing experience, quality, and a team
-                that's passionate about building dreams.
-              </p>
-            </div>
-            <br />
-            <div className="why-choose-us?">
-              <h2>Why Choose Us?</h2>
-              <ul className="why-choose-us-list">
-                <li>
-                  <strong>Versatility:</strong> Our team boasts expertise in
-                  various trades, including flooring, painting, kitchen, and
-                  bath remodels, fences, ADUs, decks, and commercial tenant
-                  improvements. Whether it's a small repair or a major
-                  renovation, we have the skills to handle it all.
-                </li>
-                <li>
-                  <strong>Quality Craftsmanship:</strong> We take immense pride
-                  in delivering high-quality workmanship. Our attention to
-                  detail ensures that every project we complete meets the
-                  highest standards of quality and durability.
-                </li>
-                <li>
-                  <strong>Multi-Family Specialists:</strong> We specialize in
-                  multi-family and rental property remodels, offering services
-                  tailored to the unique needs of property owners. From
-                  maintenance to modernization, we enhance the value of your
-                  investment.
-                </li>
-                <li>
-                  <strong>Exceptional Team:</strong> Our experienced and
-                  dedicated team is the backbone of our success. With a wealth
-                  of knowledge and a passion for construction, we bring your
-                  vision to life.
-                </li>
-                <li>
-                  <strong>Customer-Centric:</strong> Customer satisfaction is
-                  our ultimate goal. We work closely with you to understand your
-                  needs, provide transparent communication throughout the
-                  project, and ensure your vision becomes a reality.
-                </li>
-              </ul>
-              <p className="why-us-summary">
-                Proudly serving San Luis Obispo County and surrounding areas,
-                we're your trusted local partner for all construction needs.
-                Discover the JD Moody Construction difference – where
-                experience, quality, and customer focus come together to create
-                exceptional results.
-              </p>
-            </div>
-            <br />
-          </div>
-
-          <Gallery />
-          {/* <Card /> */}
-
-          <div className="contact-container" id="contact">
-            <div className="contact-header">
-              <h1>Contact Us Today!</h1>
-            </div>
-            <Contact />
-          </div>
+      </Col>
+      <Col xs={12} md={4} className="text-center pt-md-5">
+        <div className="header-logo-container">
+          <img src={Logo} alt="Logo" className="header-logo" />
         </div>
-        <Footer />
+      </Col>
+    </Row>
+  </div>
+</Container>
+
+
+      {/*Body*/}
+      <div className="body-container">
+
+        <Container>
+          <Row>
+            {/* Left side with a box containing text */}
+            <Col xs={12} md={6} className="left-box">
+              <h2>Your Project, Our Expertise</h2>
+              <p>
+                From bathroom remodels to property maintenance, JD Moody
+                Construction is your go-to partner for turning dreams into
+                reality. We offer a wide range of services, including property
+                maintenance, fence installation, ADU construction, flooring,
+                carpentry, kitchen and bath remodeling, painting, and more. No
+                project is too big or too small—we're here for you!
+              </p>
+            </Col>
+
+            {/* Right side with a responsive carousel */}
+            <Col xs={12} md={6} className="right-carousel">
+              <Carousel>
+                <Carousel.Item>
+                  {/* Your first carousel item content */}
+                  <img
+                    src={Logo}
+                    alt="First slide"
+                    style={{ height: "30vh", objectFit: "cover" }}
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  {/* Your second carousel item content */}
+                  <img
+                    src={Logo}
+                    alt="Second slide"
+                    style={{ height: "30vh", objectFit: "cover" }}
+                  />
+                </Carousel.Item>
+                {/* Add more carousel items as needed */}
+              </Carousel>
+              <Link to="/our-work">
+                <Button variant="primary" className="mt-3">
+                  See more
+                </Button>
+              </Link>
+            </Col>
+          </Row>
+        </Container>
+
+        {/*Overlap Info*/}
+        <Container>
+      <Row className="overlap-container">
+        {/* Box with background color and text */}
+        <Col md={6} className="text-box">
+          <h2>Text Box</h2>
+          <p>This box is filled with text and has a background color.</p>
+          {/* Add more text or content as needed */}
+        </Col>
+
+        {/* Box with an image */}
+        <Col md={6} className="image-box">
+          {/* You can use an image tag or set the background image in CSS */}
+          <img src={backgroundPhoto} alt="Box" className="img-fluid" />
+          {/* Add more content or adjust the image as needed */}
+        </Col>
+      </Row>
+    </Container>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -1,18 +1,32 @@
 .App {
   text-align: center;
-  background: #0e4c92;
+  background: #68B0DD;
   min-height: 100vh;
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
-  font-family: "Open Sans", sans-serif;
-  font-family: "Oswald", sans-serif;
-  font-size: 1.2rem;
+  color: rgb(57, 40, 209);
+  font-family: 'Dhurjati', sans-serif;
+  /* font-size: 1.2rem; */
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+p {
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1em;
 }
 
 
