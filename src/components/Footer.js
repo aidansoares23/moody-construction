@@ -5,7 +5,7 @@ import Logo from "./images/LogoFinal.png";
 
 function Footer() {
   return (
-    <div className="footer-container">
+    <div className="footer-container mt-4 pb-4 pt-4">
       <Container>
         <Row className="footer-wrapper">
           <Col xs={12} md={4} className="footer-logo">

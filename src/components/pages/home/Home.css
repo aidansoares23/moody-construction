@@ -1,105 +1,52 @@
 .nav-logo {
-  max-height: 10vh;
+  max-height: 8vh;
   width: auto;
 }
 
 .nav-container {
-  background: #68B0DD;
+  background: #01A4DF;
 }
 
+.header-text h1, .header-text h2 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
 .header-wrapper-container {
-  min-height: 100vh;
-  background-image: url("../../images/IMG_5832.jpg");
-  /* background-size: cover; */
-  /* background-repeat: no-repeat; */
+  position: relative;
+  min-height: 90vh;
+  background-image: url("../../images/IMG_5817.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
-}
-
-.header-wrapper-container {
-  min-height: 100vh;
-  /* background-image: repeating-linear-gradient(
-    0deg,
-    url("../../images/IMG_5832.jpg") 0px 0px,
-    url("../../images/IMG_5832.jpg") 0px 200px,
-    url("../../images/IMG_5832.jpg") 200px 0px,
-    url("../../images/IMG_5832.jpg") 200px 200px
-  ); */
-  background-size: 400px 400px; 
-  /* background-repeat: repeat; */
-}
-
-
-.header-logo {
-  max-width: 100%;
-  height: 50vh;
-}
-
-.header-text {
-  padding: 20px;
-  font-size: 1.5rem;
   
 }
 
-.custom-big-text-h1 {
-  font-size: 4rem; /* Adjust the value based on your preference */
-}
-
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #3498db;
-  color: #fff;
-  text-decoration: none;
-  margin: 0 10px;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #e74c3c;
-}
-
 .overlap-container {
-  position: relative;
+  border: 2px solid white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 2px;
+  border-radius: 50px;
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
 
-.text-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(52, 152, 219, 0.3);
-  padding: 20px;
-  width: 100%;
-  height: 100%;
-  z-index: 5;
+.header-text h1, h2{
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 3rem;
 }
 
-.image-box {
-  position: relative;
+h3 {
+  color: #F5E000;
+  font-weight: 700;
+  font-size: 2rem;
 }
 
-.image-box img {
-  width: 100%; /* Ensure the image takes the full width of the box */
-  height: auto; /* Maintain the aspect ratio of the image */
-}
-
-
-
-
-.header-mask-container {
-  overflow: hidden;
-  border-radius: 50%;
-}
-
-.header-logo-container {
-  overflow: hidden;
-  border-radius: 50%;
-}
-
-.header-logo {
-  max-width: 100%;
-  height: 50vh;
-  border-radius: 50%;
-}
 

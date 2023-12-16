@@ -1,10 +1,18 @@
 .App {
   text-align: center;
-  background: #68B0DD;
+  background: #014B65;
   min-height: 100vh;
-  color: rgb(57, 40, 209);
-  font-family: 'Dhurjati', sans-serif;
-  /* font-size: 1.2rem; */
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  /* text-align: left; */
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+p {
+  text-align: left;
 }
 
 * {
