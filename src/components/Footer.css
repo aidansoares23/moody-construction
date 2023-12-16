@@ -3,6 +3,18 @@
 }
 
 .footer-container {
-    border-top: 1px solid red;
-    background-color: #01A4DF;
+    background-color: #012D3D;
+}
+
+.footer-contact-info-2 {
+    text-align: left;
+    font-size: 22px;
+}
+
+.footer-contact-info-2 a {
+    color: #F5E000;
+}
+
+.footer-contact-info-2 a:hover {
+    color: #fff;
 }

@@ -4,7 +4,8 @@
 }
 
 .nav-container {
-  background: #01A4DF;
+  background: #012D3D;
+  color: #ffffff;
 }
 
 .header-text h1, .header-text h2 {
@@ -21,7 +22,7 @@ h3 {
 .header-wrapper-container {
   position: relative;
   min-height: 90vh;
-  background-image: url("../../images/IMG_5817.jpg");
+  background-image: url("../../images/JD23.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

@@ -1,10 +1,11 @@
 import React, { useRef } from "react";
-import "./Contact.css";
+import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
-import Logo from "../../images/LogoFinal.png";
+import "./Contact.css";
 
 function Contact() {
   const form = useRef();
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -18,7 +19,6 @@ function Contact() {
       .then(
         (result) => {
           alert("Message successfully sent!");
-
           form.current.reset();
         },
         (error) => {
@@ -28,95 +28,57 @@ function Contact() {
   };
 
   return (
-    <div className="contact-wrapper">
-      <div className="contact-info">
-
-             
-      <div className="logo-and-contact">
-        <ul>
-          <li>JD Moody Construction</li>
-          <li>P.O. Box 13745</li>
-          <li>San Luis Obispo, CA, 93406</li>
-          <li>LIC # 1060355</li>
-          <li>
-            <strong>Email:</strong>{" "}
-            <a href="mailto:josh@jdmoodyconstruction.com">
-              Josh@jdmoodyconstruction.com
-            </a>
-          </li>
-          <li>
-            <strong>Phone:</strong> <a href="tel:2144995730">(214) 499-5730</a>
-          </li>
-        </ul>
-        <div className="CTA-and-buttons">
-        <h4 id="CTA-1">
-          Are you ready for a high quality and professional experience? Give us
-          a call, send an email, or use the provided form, we look forward to
-          sharing our expertise!
-        </h4>
-        <br/>
-        <ul className="CTA-container" id="CTA-1">
-          <li>
-            <a href="tel:2144995730">
-              {" "}
-              <strong>
-                CALL NOW <i class="fa-solid fa-phone"></i>
-              </strong>
-            </a>
-          </li>
-          <li>
-            <a href="mailto:josh@jdmoodyconstruction.com">
-              <strong>
-                EMAIL <i class="fa-solid fa-envelope"></i>
-              </strong>
-            </a>
-          </li>
-        </ul>
-        </div>
-        </div>
-        <br />
-
-        <img src={Logo} className="footer-logo" alt="ok"/>
-
-
-      </div>
-      <div className="contact-form">
-        <h2>Send Us a Message</h2>
-        <form ref={form} onSubmit={sendEmail}>
-          <div className="form-group">
-            <label htmlFor="name">Name:</label>
-            <input
-              type="text"
-              id="name"
-              name="from_name"
-              required
-              placeholder="Provide your name here"
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="email">Email:</label>
-            <input
-              type="email"
-              id="email"
-              name="from_email"
-              required
-              placeholder="Provide your email here"
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="message">Message:</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="8"
-              required
-              placeholder="Enter your message here"
-            ></textarea>
-          </div>
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
-    </div>
+    <Container className="contact-wrapper justify-content-center">
+      <Row className="align-items-center">
+        <Col md={6}>
+          <p>
+            Ready for a high-quality and professional experience? Give us a
+            call, send an email, or use the provided form. We are thrilled to
+            begin working with you!
+          </p>
+          <Row>
+            <Button>Call Now</Button>
+          </Row>
+          <Row>
+            <Button>Email</Button>
+          </Row>
+        </Col>
+        <Col md={6} className="contact-form">
+          <h2>Send Us a Message</h2>
+          <Form ref={form} onSubmit={sendEmail}>
+            <Form.Group controlId="name">
+              <Form.Label>Name:</Form.Label>
+              <Form.Control
+                type="text"
+                name="from_name"
+                required
+                placeholder="Provide your name here"
+              />
+            </Form.Group>
+            <Form.Group controlId="email">
+              <Form.Label>Email:</Form.Label>
+              <Form.Control
+                type="email"
+                name="from_email"
+                required
+                placeholder="Provide your email here"
+              />
+            </Form.Group>
+            <Form.Group controlId="message">
+              <Form.Label>Message:</Form.Label>
+              <Form.Control
+                as="textarea"
+                name="message"
+                rows="8"
+                required
+                placeholder="Enter your message here"
+              />
+            </Form.Group>
+            <Button type="submit">Send Message</Button>
+          </Form>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 

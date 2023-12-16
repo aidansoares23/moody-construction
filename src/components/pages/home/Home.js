@@ -1,13 +1,14 @@
 import React from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
-import Logo from "../../images/LogoFinal.png";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Carousel from "react-bootstrap/Carousel";
 import Button from "react-bootstrap/Button";
-import backgroundPhoto from "../../images/IMG_1003.jpg";
+import JD8 from "../../images/JD8.jpg";
+import JD21 from "../../images/JD21.jpg";
+import JD14 from "../../images/JD14.jpg";
 
 function Home() {
   return (
@@ -54,20 +55,25 @@ function Home() {
                 <Carousel.Item>
                   {/* Your first carousel item content */}
                   <img
-                    src={Logo}
+                    src={JD8}
                     alt="First slide"
-                    style={{ height: "30vh", objectFit: "cover" }}
+                    style={{ height: "40vh", objectFit: "cover" }}
                   />
                 </Carousel.Item>
                 <Carousel.Item>
-                  {/* Your second carousel item content */}
                   <img
-                    src={Logo}
+                    src={JD21}
                     alt="Second slide"
-                    style={{ height: "30vh", objectFit: "cover" }}
+                    style={{ height: "40vh", objectFit: "cover" }}
                   />
                 </Carousel.Item>
-                {/* Add more carousel items as needed */}
+                <Carousel.Item>
+                  <img
+                    src={JD14}
+                    alt="Third slide"
+                    style={{ height: "40vh", objectFit: "cover" }}
+                  />
+                </Carousel.Item>
               </Carousel>
               <Link to="/our-work">
                 <Button variant="primary" className="mt-3">
@@ -85,7 +91,7 @@ function Home() {
               <h3>Why Choose Us?</h3>
             </Row>
             <Col md={6} className="image-box">
-              <img src={backgroundPhoto} alt="Box" className="img-fluid" />
+              <img src={JD21} alt="Box" className="img-fluid" />
             </Col>
             <Col md={6} className="text-box">
               <p>
@@ -123,11 +129,15 @@ function Home() {
             <h3>Ready to start?</h3>
           </Row>
           <Row className="text-center">
-            <p>Contact us today to we'll transform your dreams into a reality.</p>
+            <p>
+              Contact us today to we'll transform your dreams into a reality.
+            </p>
           </Row>
           <Row className="justify-content-center text-center">
             <Col xs={6}>
-              <Button>Start Planning</Button>
+              <Link to="/contact">
+                <Button>Start Planning</Button>
+              </Link>
             </Col>
           </Row>
         </Container>

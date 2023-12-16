@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col } from "react-bootstrap";
 import "./Footer.css";
 import Logo from "./images/LogoFinal.png";
 
@@ -18,8 +18,14 @@ function Footer() {
             <p>LIC # 1060355</p>
           </Col>
           <Col xs={12} md={4} className="footer-contact-info-2">
-            <p>email: josh@jdmoodyconstruction.com</p>
-            <p>phone: (214) 499-5730</p>
+            <Row>
+              <a href="mailto:josh@jdmoodyconstruction.com">
+                josh@jdmoodyconstruction.com
+              </a>
+            </Row>
+            <Row className="pt-2">
+              <a href="tel:2144995730">(214) 499-5730</a>
+            </Row>
           </Col>
         </Row>
       </Container>
