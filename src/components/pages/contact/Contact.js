@@ -28,7 +28,11 @@ function Contact() {
   };
 
   return (
-    <Container className="contact-wrapper justify-content-center">
+    <Container className="contact-wrapper">
+      <h2 style={{ borderBottom: "2px solid #007bff", paddingBottom: "5px" }}>
+        Contact Us
+      </h2>
+
       <Row className="align-items-center">
         <Col md={6}>
           <p>
@@ -37,14 +41,23 @@ function Contact() {
             begin working with you!
           </p>
           <Row>
-            <Button>Call Now</Button>
+            <Col>
+            <a href="tel:2144995730">
+              <Button className="mt-3 mx-auto w-50">Call Now</Button>
+              </a>
+            </Col>
           </Row>
+
           <Row>
-            <Button>Email</Button>
+            <Col>
+            <a href="mailto:josh@jdmoodyconstruction.com">
+              <Button className="mt-3 mx-auto w-50">Email</Button>
+              </a>
+            </Col>
           </Row>
         </Col>
         <Col md={6} className="contact-form">
-          <h2>Send Us a Message</h2>
+          <h3>Send us a message</h3>
           <Form ref={form} onSubmit={sendEmail}>
             <Form.Group controlId="name">
               <Form.Label>Name:</Form.Label>
@@ -74,7 +87,9 @@ function Contact() {
                 placeholder="Enter your message here"
               />
             </Form.Group>
-            <Button type="submit">Send Message</Button>
+            <Button type="submit" className="mt-3">
+              Send Message
+            </Button>
           </Form>
         </Col>
       </Row>

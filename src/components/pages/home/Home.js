@@ -130,7 +130,7 @@ function Home() {
           </Row>
           <Row className="text-center">
             <p>
-              Contact us today to we'll transform your dreams into a reality.
+              Contact us today to transform your dreams into a reality.
             </p>
           </Row>
           <Row className="justify-content-center text-center">

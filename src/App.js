@@ -6,6 +6,7 @@ import OurNavbar from "./components/pages/navbar/Navbar";
 import Contact from "./components/pages/contact/Contact";
 import Gallery from "./components/pages/our-work/Gallery";
 import StartAtTop from './StartAtTop';
+import Service from "./components/service/Service";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" Component={Home} />
           <Route path="/our-work" Component={Gallery} />
           <Route path="/contact" Component={Contact} />
+          <Route path="/services" Component={Service} />
         </Routes>
       </Router>
       <Footer />

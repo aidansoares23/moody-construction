@@ -3,11 +3,6 @@
   width: auto;
 }
 
-.nav-container {
-  background: #012D3D;
-  color: #ffffff;
-}
-
 .header-text h1, .header-text h2 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
