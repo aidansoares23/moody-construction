@@ -1,12 +1,10 @@
+/* Start of Global Styling */
 .App {
   text-align: center;
-  background: #0e4c92;
+  background: #014B65;
   min-height: 100vh;
-  color: #ffff4c;
-  font-family: "Montserrat", sans-serif;
-  font-family: "Open Sans", sans-serif;
-  font-family: "Oswald", sans-serif;
-  font-size: calc(15px + 0.390625vw);
+  color: #fff;
+  font-family: 'Playfair Display', serif;
 }
 
 * {
@@ -14,5 +12,99 @@
   margin: 0;
   padding: 0;
 }
+
+p {
+  font-size: 20px;
+}
+
+.page-title {
+  font-size: 3rem;
+}
+
+.header-text{
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 200px;
+}
+
+
+.highlighted-header {
+  color: #F5E000;
+  font-weight: 700;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.center-text {
+  text-align: center;
+}
+
+.left-align-text {
+  text-align: left;
+}
+/* End of Global Styling */
+
+
+
+/* Start of Home Page Styling */
+.nav-logo {
+  max-height: 8vh;
+  width: auto;
+}
+
+.header-text h1, .header-text h2 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header-wrapper-container {
+  position: relative;
+  min-height: 90vh;
+  background-image: url("../src/components/images/JD23.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.overlap-container {
+  border: 2px solid white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 2px;
+  border-radius: 50px;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+/* End of Home Page Styling */
+
+
+/* Contact Page Styling*/
+.contact-wrapper {
+  min-height: 80vh;
+}
+/* End of Contact Page Styling*/
+
+
+/* Start of Footer Styling */
+.footer-logo img {
+  max-height: 150px;
+}
+
+.footer-container {
+  background-color: #012D3D;
+}
+
+.footer-contact-info-2 {
+  text-align: left;
+  font-size: 22px;
+}
+
+.footer-contact-info-2 a {
+  color: #F5E000;
+}
+
+.footer-contact-info-2 a:hover {
+  color: #fff;
+}
+/* End of Footer Styling */
+
 
 
