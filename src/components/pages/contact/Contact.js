@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
-import "./Contact.css";
 
 function Contact() {
   const form = useRef();
@@ -28,36 +27,39 @@ function Contact() {
   };
 
   return (
-    <Container className="contact-wrapper">
-      <h2 style={{ borderBottom: "2px solid #007bff", paddingBottom: "5px" }}>
+    <Container className="contact-wrapper ">
+      <h2
+        className="page-title"
+        style={{ borderBottom: "2px solid #007bff", paddingBottom: "5px" }}
+      >
         Contact Us
       </h2>
 
-      <Row className="align-items-center">
+      <Row className="align-items-center left-align-text">
         <Col md={6}>
           <p>
             Ready for a high-quality and professional experience? Give us a
             call, send an email, or use the provided form. We are thrilled to
             begin working with you!
           </p>
-          <Row>
+          <Row className="center-text">
             <Col>
-            <a href="tel:2144995730">
-              <Button className="mt-3 mx-auto w-50">Call Now</Button>
+              <a href="tel:2144995730">
+                <Button className="mt-3 mx-auto w-50">Call Now</Button>
               </a>
             </Col>
           </Row>
 
-          <Row>
+          <Row className="center-text">
             <Col>
-            <a href="mailto:josh@jdmoodyconstruction.com">
-              <Button className="mt-3 mx-auto w-50">Email</Button>
+              <a href="mailto:josh@jdmoodyconstruction.com">
+                <Button className="mt-3 mx-auto w-50">Email</Button>
               </a>
             </Col>
           </Row>
         </Col>
         <Col md={6} className="contact-form">
-          <h3>Send us a message</h3>
+          <h3 className="center-text highlighted-header">Send us a message</h3>
           <Form ref={form} onSubmit={sendEmail}>
             <Form.Group controlId="name">
               <Form.Label>Name:</Form.Label>

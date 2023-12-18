@@ -1,23 +1,22 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import "./Footer.css";
-import Logo from "./images/LogoFinal.png";
+import Logo from "../images/LogoFinal.png";
 
 function Footer() {
   return (
     <div className="footer-container mt-4 pb-4 pt-4">
-      <Container>
+      <Container >
         <Row className="footer-wrapper">
           <Col xs={12} md={4} className="footer-logo">
             <img src={Logo} alt="footer logo" />
           </Col>
-          <Col xs={12} md={4} className="footer-contact-info">
+          <Col xs={12} md={4} className="footer-contact-info left-align-text">
             <p>JD Moody Construction</p>
             <p>P.O. Box: 13745</p>
             <p>San Luis Obispo</p>
             <p>LIC # 1060355</p>
           </Col>
-          <Col xs={12} md={4} className="footer-contact-info-2">
+          <Col xs={12} md={4} className="footer-contact-info-2 left-align-text">
             <Row>
               <a href="mailto:josh@jdmoodyconstruction.com">
                 josh@jdmoodyconstruction.com

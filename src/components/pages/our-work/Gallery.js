@@ -68,7 +68,7 @@ function Gallery() {
 
   return (
     <Container>
-      <h2 style={{ borderBottom: "2px solid #007bff", paddingBottom: "5px" }}>
+      <h2 className="page-title"style={{ borderBottom: "2px solid #007bff", paddingBottom: "5px" }}>
         Our Work
       </h2>
       <Row xs={1} md={2} lg={3}>

@@ -4,8 +4,8 @@ import Accordion from "react-bootstrap/Accordion";
 
 function Service() {
   return (
-    <Container>
-      <h2 style={{ borderBottom: "2px solid #007bff", paddingBottom: "5px" }}>
+    <Container style={{ minHeight: "100vh" }}>
+      <h2 className="page-title" style={{ borderBottom: "2px solid #007bff", paddingBottom: "5px" }}>
         Services
       </h2>
       <Accordion defaultActiveKey="0">

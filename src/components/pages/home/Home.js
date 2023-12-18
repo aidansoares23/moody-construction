@@ -1,5 +1,4 @@
 import React from "react";
-import "./Home.css";
 import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
@@ -18,12 +17,12 @@ function Home() {
         fluid
         className="header-wrapper-container mb-5 d-flex align-items-center justify-content-center"
       >
-        <Col className="text-center test-me">
-          <div className="header-text text-content pb-5">
-            <h1 className="display-4 pb-2">
+        <Col className="text-center">
+          <div className="header-text pb-5">
+            <h1 className="pb-2">
               <strong>JD MOODY CONSTRUCTION</strong>
             </h1>
-            <h2 className="font-weight-bold pb-2">
+            <h2 className="pb-2">
               <strong>
                 -Proudly Serving San Luis Obispo and Neighboring Areas-
               </strong>
@@ -34,11 +33,11 @@ function Home() {
 
       {/*Body*/}
       <div className="body-container">
-        <Container className="mb-5">
-          <Row>
+        <Container className="mb-5 ">
+          <Row >
             {/* Left side with a box containing text */}
-            <Col xs={12} md={6} className="left-box">
-              <h3>Your Project, Our Expertise</h3>
+            <Col xs={12} md={6} className="left-box left-align-text">
+              <h3 className="center-text highlighted-header">Your Project, Our Expertise</h3>
               <p>
                 From bathroom remodels to property maintenance, JD Moody
                 Construction is your go-to partner for turning dreams into
@@ -85,10 +84,10 @@ function Home() {
         </Container>
 
         {/*Overlap Info*/}
-        <Container>
+        <Container className="left-align-text">
           <Row className="overlap-container ml-1 mr-5">
             <Row className="pt-2 pb-2">
-              <h3>Why Choose Us?</h3>
+              <h3 className="center-text highlighted-header">Why Choose Us?</h3>
             </Row>
             <Col md={6} className="image-box">
               <img src={JD21} alt="Box" className="img-fluid" />
@@ -126,7 +125,7 @@ function Home() {
 
         <Container className="pt-5 pb-5">
           <Row>
-            <h3>Ready to start?</h3>
+            <h3 className="highlighted-header">Ready to start?</h3>
           </Row>
           <Row className="text-center">
             <p>
