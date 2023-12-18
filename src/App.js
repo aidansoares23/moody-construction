@@ -20,8 +20,8 @@ function App() {
           <Route path="/contact" Component={Contact} />
           <Route path="/services" Component={Service} />
         </Routes>
+        <Footer />
       </Router>
-      <Footer />
     </div>
   );
 }
