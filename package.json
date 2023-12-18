@@ -1,6 +1,7 @@
 {
   "name": "moody-construction",
   "version": "0.1.0",
+  "homepage": "https://www.jdmoodyconstruction.com/",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
