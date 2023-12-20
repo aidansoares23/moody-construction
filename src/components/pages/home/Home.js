@@ -14,36 +14,36 @@ function Home() {
     <div className="home-container">
       {/*Header*/}
       <Container
-        fluid
-        className="header-wrapper-container mb-5 d-flex align-items-center justify-content-center"
-      >
-        <Col className="text-center">
-          <div className="header-text pb-5">
-            <h1 className="pb-2">
-              <strong>JD MOODY CONSTRUCTION</strong>
-            </h1>
-            <h2 className="pb-2">
-              <strong>
-                -Proudly Serving San Luis Obispo and Neighboring Areas-
-              </strong>
-            </h2>
-          </div>
-        </Col>
-      </Container>
+      fluid
+      className="header-wrapper-container mb-5 d-flex align-items-center justify-content-center"
+    >
+      <Col className="header-text">
+        <div className="pb-3 pt-3" style={{ fontFamily: 'Playfair Display, serif' }}>
+          <h1 className="pb-2" style={{ textShadow: '4px 4px 6px #000000', fontWeight: 1200}}>
+            <strong>JD MOODY CONSTRUCTION</strong>
+          </h1>
+          <h2 className="pb-2" style={{ textShadow: '4px 4px 6px #000000', fontWeight: 1000 }}>
+            <strong>-Proudly Serving San Luis Obispo and Neighboring Areas-</strong>
+          </h2>
+        </div>
+      </Col>
+    </Container>
 
       {/*Body*/}
       <div className="body-container">
         <Container className="mb-5 ">
-          <Row >
+          <Row>
             {/* Left side with a box containing text */}
             <Col xs={12} md={6} className="left-box left-align-text">
-              <h3 className="center-text highlighted-header">Your Project, Our Expertise</h3>
+              <h3 className="center-text highlighted-header">
+                Your Project, Our Expertise
+              </h3>
               <p>
                 From bathroom remodels to property maintenance, JD Moody
                 Construction is your go-to partner for turning dreams into
                 reality. We offer a wide range of services, including property
-                maintenance, fence installation, ADU construction, flooring,
-                carpentry, kitchen and bath remodeling, painting, and more. No
+                maintenance, remodeling,, ADU construction, flooring, carpentry,
+                kitchen and bath, painting, fence installation and more. No
                 project is too big or too small—we're here for you!
               </p>
             </Col>
@@ -104,7 +104,7 @@ function Home() {
               <p>
                 As a versatile construction company, we specialize in property
                 maintenance, remodeling, and both commercial and residential new
-                construction projects. We're proud of our ability to transform
+                construction projects. We're dedicated to transforming your
                 visions into reality, whether it involves revitalizing existing
                 spaces or crafting innovative designs for new builds. Our
                 dedication to quality, professionalism, and customer
@@ -128,9 +128,7 @@ function Home() {
             <h3 className="highlighted-header">Ready to start?</h3>
           </Row>
           <Row className="text-center">
-            <p>
-              Contact us today to transform your dreams into a reality.
-            </p>
+            <p>Contact us today to transform your dreams into a reality.</p>
           </Row>
           <Row className="justify-content-center text-center">
             <Col xs={6}>

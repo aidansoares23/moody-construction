@@ -21,12 +21,6 @@ p {
   font-size: 3rem;
 }
 
-.header-text{
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 200px;
-}
-
 
 .highlighted-header {
   color: #F5E000;
@@ -48,7 +42,7 @@ p {
 
 /* Start of Home Page Styling */
 .nav-logo {
-  max-height: 8vh;
+  max-height: 13.5vh;
   width: auto;
 }
 
@@ -65,6 +59,14 @@ p {
   background-position: center;
 }
 
+
+.header-text {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6); 
+  max-width: 80vw;
+  border-radius: 20px;
+
+}
 .overlap-container {
   border: 2px solid white;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
