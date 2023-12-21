@@ -44,7 +44,7 @@ function Contact() {
           </p>
           <Row className="center-text">
             <Col>
-              <a href="tel:2144995730">
+              <a href="tel:8053161217">
                 <Button className="mt-3 mx-auto w-50">Call Now</Button>
               </a>
             </Col>

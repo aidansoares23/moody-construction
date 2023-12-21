@@ -23,7 +23,7 @@ function Footer() {
               </a>
             </Row>
             <Row className="pt-2">
-              <a href="tel:2144995730">(805) 316-1217</a>
+              <a href="tel:8053161217">(805) 316-1217</a>
             </Row>
           </Col>
         </Row>
