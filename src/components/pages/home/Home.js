@@ -19,12 +19,12 @@ function Home() {
     >
       <Col className="header-text">
         <div className="pb-3 pt-3" style={{ fontFamily: 'Playfair Display, serif' }}>
-          <h1 className="pb-2" style={{ textShadow: '4px 4px 6px #000000', fontWeight: 1200}}>
+          <h1 className="pb-2 fadeInFirst" style={{ textShadow: '2px 2px 4px #F5E000', fontWeight: 1300}}>
             <strong>JD MOODY CONSTRUCTION</strong>
           </h1>
-          <h2 className="pb-2" style={{ textShadow: '4px 4px 6px #000000', fontWeight: 1000 }}>
-            <strong>-Proudly Serving San Luis Obispo and Neighboring Areas-</strong>
-          </h2>
+          <h6 className="pb-2 fadeInSecond" style={{ textShadow: '4px 4px 6px #000000', fontWeight: 750 }}>
+            <strong>Proudly Serving San Luis Obispo and Neighboring Areas</strong>
+          </h6>
         </div>
       </Col>
     </Container>
@@ -42,7 +42,7 @@ function Home() {
                 From bathroom remodels to property maintenance, JD Moody
                 Construction is your go-to partner for turning dreams into
                 reality. We offer a wide range of services, including property
-                maintenance, remodeling,, ADU construction, flooring, carpentry,
+                maintenance, remodeling, ADU construction, flooring, carpentry,
                 kitchen and bath, painting, fence installation and more. No
                 project is too big or too small—we're here for you!
               </p>

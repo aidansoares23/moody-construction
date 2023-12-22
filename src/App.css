@@ -46,9 +46,32 @@ p {
   width: auto;
 }
 
-.header-text h1, .header-text h2 {
+.fadeInFirst {
+  opacity: 0;
+  animation: fadeInAnimation 2s forwards;
+}
+
+.fadeInSecond {
+  opacity: 0;
+  animation: fadeInAnimation 2s 2s forwards;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.header-text h2 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
+.header-text h1 {
+  text-shadow: 2px 2px 4px rgba(211, 0, 0, 0.5);
+} 
 
 .header-wrapper-container {
   position: relative;
